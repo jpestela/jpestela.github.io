@@ -1,0 +1,15 @@
+---
+layout: default
+title: Concept
+permalink: /concept/
+---
+
+<h1>Concept</h1>
+<p>Click images for full screen</p>
+
+{% assign image_files = site.static_files | where: "conceptual", true %}
+{% for myimage in image_files %}
+<a class="imageLink" href="{{ myimage.path }}" target="_blank">
+  <img src="{{ myimage.path }}">
+</a>
+{% endfor %}

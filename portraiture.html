@@ -1,0 +1,15 @@
+---
+layout: default
+title: Portraiture
+permalink: /portraiture/
+---
+
+<h1>Portraiture</h1>
+<p>Click images for full screen</p>
+
+{% assign image_files = site.static_files | where: "portraiture", true %}
+{% for myimage in image_files %}
+<a class="imageLink" href="{{ myimage.path }}" target="_blank">
+  <img src="{{ myimage.path }}">
+</a>
+{% endfor %}

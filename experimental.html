@@ -1,0 +1,15 @@
+---
+layout: default
+title: Experimental
+permalink: /experimental/
+---
+
+<h1>Experimental</h1>
+<p>Click images for full screen</p>
+
+{% assign image_files = site.static_files | where: "experimental", true %}
+{% for myimage in image_files %}
+<a class="imageLink" href="{{ myimage.path }}" target="_blank">
+  <img src="{{ myimage.path }}">
+</a>
+{% endfor %}

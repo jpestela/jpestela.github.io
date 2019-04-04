@@ -1,5 +1,25 @@
 title: Juan Estela
 theme: jekyll-theme-minimal
 repository: jpestela/jpestela.github.io
-description: Enjoys popcorn for dinner
 logo: /assets/img/FINAL_LOGO.png
+defaults:
+  - scope:
+      path: "assets/img/design/branding"
+    values:
+      branding: true
+  - scope:
+      path: "assets/img/design/conceptual"
+    values:
+      conceptual: true
+  - scope:
+      path: "assets/img/photo/experimental"
+    values:
+      experimental: true
+  - scope:
+      path: "assets/img/photo/portraiture"
+    values:
+      portraiture: true
+  - scope:
+      path: "assets/img/photo/sport"
+    values:
+      sport: true

@@ -62,3 +62,12 @@ button {
 a.imageLink{
   text-decoration:none;
 }
+
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  top: 510px;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
